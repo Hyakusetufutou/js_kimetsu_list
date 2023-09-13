@@ -45,7 +45,7 @@ function createView(charactorInfo) {
     return escapeHTML`
         <h4 class="name">名前：${charactorInfo.name}</h4>
         <p class="category">カテゴリ：${charactorInfo.category}</p>
-        <img src="https://ihatov08.github.io/${charactorInfo.image}" alt="${charactorInfo.name}" height="300" >`;
+        <img class="charactor-image" src="https://ihatov08.github.io/${charactorInfo.image}" alt="${charactorInfo.name}" height="300" >`;
 }
 
 function displayView(view) {

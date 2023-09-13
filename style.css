@@ -6,12 +6,12 @@
 
 .charactor-item {
     width: 33%;
+    margin-bottom: 30px;
 }
 
 #loading {
     width: 100vw;
     height: 100vh;
-    /* transition: all 1s; */
     background-color: #0bd;
 
     position: fixed;
