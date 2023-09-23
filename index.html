@@ -1,28 +1,39 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>js_kimetsu_list</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
     <h1>鬼滅の刃キャラクタ一覧</h1>
     <div id="cahractor-choice">
-        <h2 style="margin: 0;">カテゴリ選択</h2>
-        <input type="radio" name="kind" value="全キャラクター" required checked onclick="main('all')">全キャラクター
-        <input type="radio" name="kind" value="鬼殺隊" onclick="main('kisatsutai')">鬼殺隊
-        <input type="radio" name="kind" value="柱" onclick="main('hashira')">柱
-        <input type="radio" name="kind" value="鬼" onclick="main('oni')">鬼
+      <h2 style="margin: 0">カテゴリ選択</h2>
+      <input
+        type="radio"
+        name="kind"
+        value="全キャラクター"
+        required
+        checked
+        onclick="main('all')"
+      />全キャラクター
+      <input
+        type="radio"
+        name="kind"
+        value="鬼殺隊"
+        onclick="main('kisatsutai')"
+      />鬼殺隊
+      <input type="radio" name="kind" value="柱" onclick="main('hashira')" />柱
+      <input type="radio" name="kind" value="鬼" onclick="main('oni')" />鬼
     </div>
     <div id="loading">
-        <div class="spinner"></div>
+      <div class="spinner"></div>
     </div>
 
-    <h2 style="margin: 40px 0 -30px 0;">キャラクタ一覧</h2>
-    <div id="charactor-list">
-    </div>
+    <h2 style="margin: 40px 0 -30px 0">キャラクタ一覧</h2>
+    <div id="charactor-list"></div>
 
     <script src="index.js"></script>
-</body>
+  </body>
 </html>
