@@ -25,7 +25,6 @@ async function main(category) {
   spinner.classList.remove("loaded");
   try {
     const charactorsInfo = await fetchKimetsuCharactorInfo(category);
-    console.log("a");
     displayClear();
     charactorsInfo.forEach((charactorInfo) => {
       const view = createView(charactorInfo);
