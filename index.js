@@ -31,12 +31,10 @@ async function main(category) {
       const view = createView(charactorInfo);
       displayView(view);
     });
-    setTimeout(() => {
-      spinner.classList.add("loaded");
-    }, 500);
   } catch (error) {
     console.error(`エラーが発生しました(${error})`);
   }
+  spinner.classList.add("loaded");
 }
 
 function fetchKimetsuCharactorInfo(category) {
