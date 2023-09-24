@@ -1,6 +1,6 @@
 let dispCategory = new Map();
 
-window.onload = function () {
+window.onload = () => {
   dispCategory.set(
     "all",
     "https://ihatov08.github.io/kimetsu_api/api/all.json"
